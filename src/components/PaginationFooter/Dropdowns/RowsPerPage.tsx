@@ -1,8 +1,8 @@
-import React from 'react';
 import type { SelectChangeEvent } from '@mui/material/Select';
-import DropDown from './DropDown';
+import React from 'react';
 import { usePaginationContext } from '../context/PaginationProvider';
 import { VisibilityThresholds } from '../types';
+import DropDown from './DropDown';
 
 const RowsPerPage = () => {
   const { pageInfo, isSelectionMode, totalColumnCount, width, handleChangeRowsPerPage } = usePaginationContext();

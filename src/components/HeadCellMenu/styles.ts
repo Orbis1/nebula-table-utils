@@ -1,7 +1,6 @@
-import { styled } from '@mui/material/styles';
-import { Menu } from '../Icon/Icon';
-import { Divider, ListItemIcon, MenuItem, ListItem, Box, Menu as MuiMenu, Typography } from '@mui/material';
 import type { CSSObject } from '@emotion/react';
+import { Box, Divider, ListItemIcon, MenuItem, Menu as MuiMenu, Typography } from '@mui/material';
+import { styled } from '@mui/material/styles';
 import {
   HEAD_CELL_MENU_ACTIVE_ITEM_GREEN_BORDER_HEIGHT,
   HEAD_CELL_MENU_GROUP_LABEL_HEIGHT,
@@ -11,6 +10,7 @@ import {
   HEAD_ICON_WRAPPER_SIZE,
 } from '../../constants';
 import { type DefaultTheme } from '../../types';
+import { Menu } from '../Icon/Icon';
 import type { ShouldForwardProp } from '../PaginationFooter/types';
 
 // ---------- HeadCellMenu ----------

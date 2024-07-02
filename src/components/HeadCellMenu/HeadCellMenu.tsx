@@ -1,12 +1,12 @@
 import React, { useCallback, useEffect } from 'react';
+import { HEAD_CELL_MENU_BUTTON_CLASS } from '../../constants';
+import { useTranslations } from '../../hooks';
 import { Menu } from '../Icon/Icon';
-import useFieldSelection from './use-field-selection';
 import RecursiveMenuList from './MenuList/RecursiveMenuList';
-import { getMenuItemGroups } from './utils';
 import { HeadCellMenuWrapper, StyledMenuButton } from './styles';
 import type { HeadCellMenuProps } from './types';
-import { useTranslations } from '../../hooks';
-import { HEAD_CELL_MENU_BUTTON_CLASS } from '../../constants';
+import useFieldSelection from './use-field-selection';
+import { getMenuItemGroups } from './utils';
 
 const HeadCellMenu = ({
   open,

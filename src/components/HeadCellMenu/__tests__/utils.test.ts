@@ -1,7 +1,7 @@
 /* eslint jest/no-standalone-expect: 0, array-callback-return: 0 */
 import { stardust } from '@nebula.js/stardust';
 import type { HeaderData, MenuAvailabilityFlags } from '../types';
-import { type GetMenuItemGroupsArgs, getMenuItemGroups } from '../utils';
+import { getMenuItemGroups, type GetMenuItemGroupsArgs } from '../utils';
 
 describe('Utils', () => {
   let headerData: HeaderData;

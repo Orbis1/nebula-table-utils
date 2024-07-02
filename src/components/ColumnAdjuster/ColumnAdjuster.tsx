@@ -1,7 +1,4 @@
 import React, { useMemo } from 'react';
-import { type ColumnAdjusterProps } from './types';
-import { preventDefaultBehavior } from '../../utils';
-import { AdjusterBorder, AdjusterHitArea } from './styles';
 import {
   COLUMN_ADJUSTER_BORDER_CLASS,
   COLUMN_ADJUSTER_CLASS,
@@ -9,6 +6,9 @@ import {
   ColumnWidthValues,
   KeyCodes,
 } from '../../constants';
+import { preventDefaultBehavior } from '../../utils';
+import { AdjusterBorder, AdjusterHitArea } from './styles';
+import { type ColumnAdjusterProps } from './types';
 
 /**
  * Component that is placed on top of column border.

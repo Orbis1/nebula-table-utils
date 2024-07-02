@@ -1,5 +1,5 @@
-import React from 'react';
 import type { SelectChangeEvent } from '@mui/material/Select';
+import React from 'react';
 import { usePaginationContext } from '../context/PaginationProvider';
 import { StyledSelect, StyledTypography } from '../styles';
 

@@ -1,8 +1,5 @@
 import React from 'react';
-import { ArrowLeft } from '../Icon/Icon';
-import { ArrowLeftStop } from '../Icon/Icon';
-import { ArrowRight } from '../Icon/Icon';
-import { ArrowRightStop } from '../Icon/Icon';
+import { ArrowLeft, ArrowLeftStop, ArrowRight, ArrowRightStop } from '../Icon/Icon';
 import { usePaginationContext } from './context/PaginationProvider';
 
 interface Props {

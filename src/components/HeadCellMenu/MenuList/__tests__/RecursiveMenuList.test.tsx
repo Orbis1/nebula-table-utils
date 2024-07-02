@@ -1,9 +1,9 @@
-import React from 'react';
 import '@testing-library/jest-dom';
 import { render } from '@testing-library/react';
-import RecursiveMenuList from '../RecursiveMenuList';
-import * as MenuGroupWrapper from '../MenuGroupWrapper';
+import React from 'react';
 import { type MenuItemGroup } from '../../types';
+import * as MenuGroupWrapper from '../MenuGroupWrapper';
+import RecursiveMenuList from '../RecursiveMenuList';
 
 jest.mock('../MenuGroupWrapper', () => ({
   __esModule: true,

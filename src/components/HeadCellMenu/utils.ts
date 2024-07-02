@@ -1,15 +1,17 @@
 import { stardust } from '@nebula.js/stardust';
-import { Descending } from '../Icon/Icon';
-import { Ascending } from '../Icon/Icon';
-import { Search } from '../Icon/Icon';
-import { Selection } from '../Icon/Icon';
-import { SelectAll } from '../Icon/Icon';
-import { ClearSelections } from '../Icon/Icon';
-import { SelectPossible } from '../Icon/Icon';
-import { SelectAlternative } from '../Icon/Icon';
-import { SelectExcluded } from '../Icon/Icon';
-import { ColumnSize } from '../Icon/Icon';
-import { type HeaderData, MenuAvailabilityFlags, type MenuItemGroup, type SortingRelatedArgs } from './types';
+import {
+  Ascending,
+  ClearSelections,
+  ColumnSize,
+  Descending,
+  Search,
+  SelectAll,
+  SelectAlternative,
+  SelectExcluded,
+  SelectPossible,
+  Selection,
+} from '../Icon/Icon';
+import { MenuAvailabilityFlags, type HeaderData, type MenuItemGroup, type SortingRelatedArgs } from './types';
 
 export type GetMenuItemGroupsArgs = Partial<SortingRelatedArgs> & {
   headerData: HeaderData;

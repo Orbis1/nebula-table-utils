@@ -1,15 +1,15 @@
 /* eslint-disable import/no-cycle */
-import React, { useState, useRef, useCallback } from 'react';
+import React, { useCallback, useRef, useState } from 'react';
 import { ArrowRight } from '../../Icon/Icon';
-import type { ExtendedHeadCellMenuItem, MenuItemGroup } from '../types';
 import {
-  StyledMenuItem,
-  StyledListItemIcon,
-  StyledMenuItemLabel,
-  StyledGroupLabel,
   StyledGreenBorder,
+  StyledGroupLabel,
+  StyledListItemIcon,
   StyledListItemLabel,
+  StyledMenuItem,
+  StyledMenuItemLabel,
 } from '../styles';
+import type { ExtendedHeadCellMenuItem, MenuItemGroup } from '../types';
 import RecursiveMenuList from './RecursiveMenuList';
 
 export const interceptClickOnMenuItems = (menuSections: MenuItemGroup[], cache: SubMenusOpenStatusCache) =>

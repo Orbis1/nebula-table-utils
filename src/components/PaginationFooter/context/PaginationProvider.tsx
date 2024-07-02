@@ -1,8 +1,8 @@
-import React, { createContext, useContext, useMemo } from 'react';
 import type { stardust } from '@nebula.js/stardust';
-import type { FooterStyle, PaginationContentProps } from '../types';
-import getFooterStyle from '../../../utils/pagination-footer-utils';
+import React, { createContext, useContext, useMemo } from 'react';
 import useTranslations from '../../../hooks/useTranslations';
+import getFooterStyle from '../../../utils/pagination-footer-utils';
+import type { FooterStyle, PaginationContentProps } from '../types';
 
 interface IPaginationProvider extends PaginationContentProps {
   footerStyle: FooterStyle;

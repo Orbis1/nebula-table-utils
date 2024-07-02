@@ -1,9 +1,9 @@
 import React from 'react';
-import { usePaginationContext } from '../context/PaginationProvider';
-import { ButtonTypes, VisibilityThresholds } from '../types';
-import { StyledButton } from '../styles';
-import usePaginationButton from '../use-pagination-button';
 import { DEFAULT_FONT_SIZE } from '../../../constants';
+import { usePaginationContext } from '../context/PaginationProvider';
+import { StyledButton } from '../styles';
+import { ButtonTypes, VisibilityThresholds } from '../types';
+import usePaginationButton from '../use-pagination-button';
 
 const FirstPage = () => {
   const { pageInfo, width } = usePaginationContext();

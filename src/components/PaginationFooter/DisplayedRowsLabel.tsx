@@ -1,6 +1,6 @@
 import React from 'react';
-import { StyledTypography } from './styles';
 import { usePaginationContext } from './context/PaginationProvider';
+import { StyledTypography } from './styles';
 import { VisibilityThresholds } from './types';
 
 const DisplayedRowsLabel = () => {

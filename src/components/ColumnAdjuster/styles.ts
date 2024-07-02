@@ -1,5 +1,5 @@
-import { styled } from '@mui/material/styles';
 import Box from '@mui/material/Box';
+import { styled } from '@mui/material/styles';
 import { COLUMN_ADJUSTER_BORDER_CLASS } from '../../constants';
 
 type ShouldForwardProp = string | number | symbol;

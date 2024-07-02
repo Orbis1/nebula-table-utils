@@ -1,9 +1,9 @@
 import React from 'react';
+import { DEFAULT_FONT_SIZE } from '../../../constants';
 import { usePaginationContext } from '../context/PaginationProvider';
+import { StyledButton } from '../styles';
 import { ButtonTypes } from '../types';
 import usePaginationButton from '../use-pagination-button';
-import { StyledButton } from '../styles';
-import { DEFAULT_FONT_SIZE } from '../../../constants';
 
 const PreviousPage = () => {
   const { pageInfo } = usePaginationContext();

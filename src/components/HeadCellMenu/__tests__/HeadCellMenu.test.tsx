@@ -1,12 +1,12 @@
 /* eslint-disable no-underscore-dangle */
-import React from 'react';
-import '@testing-library/jest-dom';
 import { stardust } from '@nebula.js/stardust';
-import { render, fireEvent, screen } from '@testing-library/react';
-import HeadCellMenu from '../HeadCellMenu';
-import * as useFieldSelectionHook from '../use-field-selection';
-import { type HeaderData, MenuAvailabilityFlags, type UseFieldSelectionOutput } from '../types';
+import '@testing-library/jest-dom';
+import { fireEvent, render, screen } from '@testing-library/react';
+import React from 'react';
 import { HEAD_CELL_MENU_BUTTON_CLASS } from '../../../constants';
+import HeadCellMenu from '../HeadCellMenu';
+import { MenuAvailabilityFlags, type HeaderData, type UseFieldSelectionOutput } from '../types';
+import * as useFieldSelectionHook from '../use-field-selection';
 
 jest.mock('../use-field-selection', () => ({
   __esModule: true,

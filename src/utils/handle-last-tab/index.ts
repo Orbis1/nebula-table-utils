@@ -1,7 +1,7 @@
 import type { stardust } from '@nebula.js/stardust';
 import { KeyCodes } from '../../constants';
-import preventDefaultBehavior from '../prevent-default-behavior';
 import focusSelectionToolbar from '../focus-selection-toolbar';
+import preventDefaultBehavior from '../prevent-default-behavior';
 
 const handleLastTab = (evt: React.KeyboardEvent, keyboard: stardust.Keyboard, isSelectionMode = false) => {
   if (isSelectionMode && evt.key === KeyCodes.TAB && !evt.shiftKey) {

@@ -1,7 +1,7 @@
 import { stardust } from '@nebula.js/stardust';
 
-import registerLocale from '../src/index';
 import all from '../all.json';
+import registerLocale from '../src/index';
 
 describe('translations', () => {
   describe('registerLocale', () => {

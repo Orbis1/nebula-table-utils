@@ -1,10 +1,10 @@
-import { styled, type Theme } from '@mui/material/styles';
 import Box from '@mui/material/Box';
-import Select from '@mui/material/Select';
 import Button from '@mui/material/Button';
+import Select from '@mui/material/Select';
+import { styled, type Theme } from '@mui/material/styles';
 import Typography from '@mui/material/Typography';
-import type { FooterStyle, ShouldForwardProp } from './types';
 import { PAGINATION_HEIGHT } from '../../constants';
+import type { FooterStyle, ShouldForwardProp } from './types';
 
 // ---------- FooterWrapper ----------
 

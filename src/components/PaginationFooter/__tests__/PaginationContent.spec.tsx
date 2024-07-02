@@ -1,10 +1,10 @@
-import React from 'react';
-import { render, fireEvent } from '@testing-library/react';
 import { stardust } from '@nebula.js/stardust';
-import PaginationContent from '../PaginationContent';
-import focusSelectionToolbar from '../../../utils/focus-selection-toolbar';
-import type { PageInfo } from '../types';
+import { fireEvent, render } from '@testing-library/react';
+import React from 'react';
 import type { ExtendedTheme } from '../../../hooks/use-extended-theme/types';
+import focusSelectionToolbar from '../../../utils/focus-selection-toolbar';
+import PaginationContent from '../PaginationContent';
+import type { PageInfo } from '../types';
 
 jest.mock('../../../utils/focus-selection-toolbar', () => jest.fn());
 

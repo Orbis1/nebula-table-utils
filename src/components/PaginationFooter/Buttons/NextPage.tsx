@@ -1,10 +1,10 @@
 import React from 'react';
-import { usePaginationContext } from '../context/PaginationProvider';
+import { DEFAULT_FONT_SIZE } from '../../../constants';
 import handleLastTab from '../../../utils/handle-last-tab';
+import { usePaginationContext } from '../context/PaginationProvider';
+import { StyledButton } from '../styles';
 import { ButtonTypes, VisibilityThresholds } from '../types';
 import usePaginationButton from '../use-pagination-button';
-import { StyledButton } from '../styles';
-import { DEFAULT_FONT_SIZE } from '../../../constants';
 
 const NextPage = () => {
   const { pageInfo, keyboard, totalPages, isSelectionMode, width } = usePaginationContext();

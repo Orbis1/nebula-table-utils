@@ -4,5 +4,5 @@
   "trailingComma": "es5",
   "endOfLine": "lf",
   "arrowParens": "always",
-  "organizeImportsSkipDestructiveCodeActions": true
+  "plugins": ["prettier-plugin-organize-imports"]
 }

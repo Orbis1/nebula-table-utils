@@ -1,9 +1,9 @@
 /* eslint-disable import/no-cycle */
-import React from 'react';
 import type { PopoverOrigin } from '@mui/material';
+import React from 'react';
+import { StyledMenu } from '../styles';
 import type { MenuItemGroup } from '../types';
 import MenuGroupWrapper from './MenuGroupWrapper';
-import { StyledMenu } from '../styles';
 
 interface RecursiveMenuListProps {
   open: boolean;

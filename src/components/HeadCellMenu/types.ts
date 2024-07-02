@@ -1,5 +1,5 @@
-import type { SVGProps } from 'react';
 import { stardust } from '@nebula.js/stardust';
+import type { SVGProps } from 'react';
 
 export enum MenuAvailabilityFlags {
   SORTING = 'sorting',

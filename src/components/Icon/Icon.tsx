@@ -35,21 +35,21 @@ export const SelectAlternative = (props: React.SVGProps<SVGSVGElement>): JSX.Ele
 export const SelectExcluded = (props: React.SVGProps<SVGSVGElement>): JSX.Element => Icon('SelectExcluded');
 
 //use-pagination-button.ts
-export const ArrowRight = Icon('ArrowRight');
-export const ArrowLeft = Icon('ArrowLeft');
-export const ArrowRightStop = Icon('ArrowRightStop');
-export const ArrowLeftStop = Icon('ArrowLeftStop');
+export const ArrowRight = (props: React.SVGProps<SVGSVGElement>): JSX.Element => Icon('ArrowRight');
+export const ArrowLeft = (props: React.SVGProps<SVGSVGElement>): JSX.Element => Icon('ArrowLeft');
+export const ArrowRightStop = (props: React.SVGProps<SVGSVGElement>): JSX.Element => Icon('ArrowRightStop');
+export const ArrowLeftStop = (props: React.SVGProps<SVGSVGElement>): JSX.Element => Icon('ArrowLeftStop');
 
 export const createV5ThemeOptions = () => {
   const palette = {};
   return { palette };
 };
 export const COLORS = {
-  GREYSCALE_100: 100,
-  GREYSCALE_95: 95,
-  GREYSCALE_90: 90,
-  GREYSCALE_85: 85,
-  GREYSCALE_70: 70,
-  GREYSCALE_50: 50,
-  GREYSCALE_20: 20,
+  GREYSCALE_100: '100',
+  GREYSCALE_95: '95',
+  GREYSCALE_90: '90',
+  GREYSCALE_85: '85',
+  GREYSCALE_70: '70',
+  GREYSCALE_50: '50',
+  GREYSCALE_20: '20',
 };

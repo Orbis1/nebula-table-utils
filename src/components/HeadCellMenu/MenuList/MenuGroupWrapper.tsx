@@ -1,7 +1,7 @@
 /* eslint-disable import/no-cycle */
 import React from 'react';
-import type { MenuItemGroup } from '../types';
 import { StyledDivider } from '../styles';
+import type { MenuItemGroup } from '../types';
 import MenuGroup from './MenuGroup';
 
 interface MenuItemsProps {

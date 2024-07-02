@@ -1,8 +1,8 @@
 import React, { useMemo } from 'react';
 import ReactDOM from 'react-dom';
+import getFooterStyle from '../../utils/pagination-footer-utils';
 import { StyledFooterWrapper } from './styles';
 import type { FooterWrapperProps } from './types';
-import getFooterStyle from '../../utils/pagination-footer-utils';
 
 const FooterWrapper = ({
   children,
