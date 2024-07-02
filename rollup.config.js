@@ -24,7 +24,6 @@ const baseConfig = defineConfig({
     '@mui/styled-engine-sc',
     '@emotion/react',
     '@emotion/styled',
-    '@qlik-trial/sprout',
   ],
   plugins: [
     ...(ENABLE_SOURCE_MAP ? [sourcemaps()] : []),

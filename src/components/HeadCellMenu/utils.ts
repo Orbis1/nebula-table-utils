@@ -1,14 +1,14 @@
 import { stardust } from '@nebula.js/stardust';
-import Descending from '@qlik-trial/sprout/icons/react/Descending';
-import Ascending from '@qlik-trial/sprout/icons/react/Ascending';
-import Search from '@qlik-trial/sprout/icons/react/Search';
-import Selection from '@qlik-trial/sprout/icons/react/Selection';
-import SelectAll from '@qlik-trial/sprout/icons/react/SelectAll';
-import ClearSelections from '@qlik-trial/sprout/icons/react/ClearSelections';
-import SelectPossible from '@qlik-trial/sprout/icons/react/SelectPossible';
-import SelectAlternative from '@qlik-trial/sprout/icons/react/SelectAlternative';
-import SelectExcluded from '@qlik-trial/sprout/icons/react/SelectExcluded';
-import ColumnSize from '@qlik-trial/sprout/icons/react/ColumnSize';
+import { Descending } from '../Icon/Icon';
+import { Ascending } from '../Icon/Icon';
+import { Search } from '../Icon/Icon';
+import { Selection } from '../Icon/Icon';
+import { SelectAll } from '../Icon/Icon';
+import { ClearSelections } from '../Icon/Icon';
+import { SelectPossible } from '../Icon/Icon';
+import { SelectAlternative } from '../Icon/Icon';
+import { SelectExcluded } from '../Icon/Icon';
+import { ColumnSize } from '../Icon/Icon';
 import { type HeaderData, MenuAvailabilityFlags, type MenuItemGroup, type SortingRelatedArgs } from './types';
 
 export type GetMenuItemGroupsArgs = Partial<SortingRelatedArgs> & {

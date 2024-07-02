@@ -1,6 +1,6 @@
 /* eslint-disable import/no-cycle */
 import React, { useState, useRef, useCallback } from 'react';
-import ArrowRight from '@qlik-trial/sprout/icons/react/ArrowRight';
+import { ArrowRight } from '../../Icon/Icon';
 import type { ExtendedHeadCellMenuItem, MenuItemGroup } from '../types';
 import {
   StyledMenuItem,

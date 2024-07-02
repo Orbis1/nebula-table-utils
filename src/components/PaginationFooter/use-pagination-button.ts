@@ -1,8 +1,8 @@
 import React from 'react';
-import ArrowLeft from '@qlik-trial/sprout/icons/react/ArrowLeft';
-import ArrowLeftStop from '@qlik-trial/sprout/icons/react/ArrowLeftStop';
-import ArrowRight from '@qlik-trial/sprout/icons/react/ArrowRight';
-import ArrowRightStop from '@qlik-trial/sprout/icons/react/ArrowRightStop';
+import { ArrowLeft } from '../Icon/Icon';
+import { ArrowLeftStop } from '../Icon/Icon';
+import { ArrowRight } from '../Icon/Icon';
+import { ArrowRightStop } from '../Icon/Icon';
 import { usePaginationContext } from './context/PaginationProvider';
 
 interface Props {

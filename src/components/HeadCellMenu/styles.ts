@@ -1,5 +1,5 @@
 import { styled } from '@mui/material/styles';
-import Menu from '@qlik-trial/sprout/icons/Menu';
+import { Menu } from '../Icon/Icon';
 import { Divider, ListItemIcon, MenuItem, ListItem, Box, Menu as MuiMenu, Typography } from '@mui/material';
 import type { CSSObject } from '@emotion/react';
 import {

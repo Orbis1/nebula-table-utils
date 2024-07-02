@@ -1,5 +1,5 @@
 import React, { useCallback, useEffect } from 'react';
-import Menu from '@qlik-trial/sprout/icons/Menu';
+import { Menu } from '../Icon/Icon';
 import useFieldSelection from './use-field-selection';
 import RecursiveMenuList from './MenuList/RecursiveMenuList';
 import { getMenuItemGroups } from './utils';

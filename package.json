@@ -42,7 +42,6 @@
   },
   "devDependencies": {
     "@jest/globals": "29.7.0",
-    "@qlik-trial/sprout": "3.4.0",
     "@qlik/eslint-config": "0.7.1",
     "@qlik/eslint-config-react": "0.1.0",
     "@qlik/prettier-config": "0.4.6",
@@ -89,14 +88,13 @@
     "semantic-release": "22.0.12",
     "typescript": "5.3.3"
   },
-  "packageManager": "pnpm@8.14.1",
+  "packageManager": "pnpm@9.1.2",
   "peerDependencies": {
     "@emotion/react": "^11.11.3",
     "@emotion/styled": "^11.11.0",
     "@mui/material": "^5.15.5",
     "@mui/styled-engine-sc": "^6.0.0-alpha.12",
     "@nebula.js/stardust": "4.9.0",
-    "@qlik-trial/sprout": "^3.4.0",
     "qlik-chart-modules": "^0.59.0",
     "react": "^18.2.0",
     "react-dom": "^18.2.0"

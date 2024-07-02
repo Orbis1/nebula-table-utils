@@ -1,5 +1,5 @@
 import type { Palette } from '@mui/material';
-import { createV5ThemeOptions, COLORS } from '@qlik-trial/sprout/theme';
+import { createV5ThemeOptions, COLORS } from '../../../components/Icon/Icon';
 
 const palette = createV5ThemeOptions().palette as Palette;
 
