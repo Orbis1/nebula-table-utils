@@ -1,8 +1,8 @@
 {
-  "name": "@orbis/nebula-table-utils",
+  "name": "orbis-nebula-table-utils",
   "license": "MIT",
   "author": "Orbis",
-  "version": "2.6.9",
+  "version": "2.7.0",
   "description": "Common Components, Hooks and utils between `sn-table` and `sn-pivot-table` projects",
   "keywords": [
     "sn-table",
@@ -103,5 +103,8 @@
     "overrides": {
       "@mui/styled-engine": "npm:@mui/styled-engine-sc@latest"
     }
+  },
+  "dependencies": {
+    "eslint-plugin-jest": "^28.6.0"
   }
 }
