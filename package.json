@@ -1,8 +1,8 @@
 {
-  "name": "@qlik/nebula-table-utils",
+  "name": "@orbis/nebula-table-utils",
   "license": "MIT",
-  "author": "QlikTech International AB",
-  "version": "2.6.8",
+  "author": "Orbis",
+  "version": "2.6.9",
   "description": "Common Components, Hooks and utils between `sn-table` and `sn-pivot-table` projects",
   "keywords": [
     "sn-table",
