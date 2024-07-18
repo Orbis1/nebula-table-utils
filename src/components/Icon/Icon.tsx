@@ -2,8 +2,36 @@ import type { Color, Palette, PaletteColor } from '@mui/material';
 import type { PaletteAugmentColorOptions } from '@mui/material/styles/createPalette';
 import React from 'react';
 
+enum arrowDirection {
+  'right' = 0,
+  'down' = 90,
+  'left' = 180,
+  'up' = 270,
+}
+
+const menuArrow = (rotation: arrowDirection) => (
+  <svg
+    xmlns="http://www.w3.org/2000/svg"
+    viewBox="0 0 16 16"
+    height="16px"
+    fill="currentColor"
+    aria-hidden="true"
+    role="img"
+    transform={`rotate(${rotation})`}
+  >
+    <path d="M8.5 8 4 3.5 5.5 2l6 6-6 6L4 12.5z"></path>
+  </svg>
+);
+
 const Icon = (title: string, props: React.SVGProps<SVGSVGElement>): JSX.Element => {
-  return <div key={props.key}>{title}</div>;
+  switch (title) {
+    case 'ArrowRight':
+      return menuArrow(arrowDirection.right);
+    case 'ArrowLeft':
+      return menuArrow(arrowDirection.left);
+    default:
+      return <div key={props.key}>{title}</div>;
+  }
 };
 // Argument of type 'Element' is not assignable to parameter of type 'keyof IntrinsicElements'
 // styles.ts
