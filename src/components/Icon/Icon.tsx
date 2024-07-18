@@ -142,7 +142,7 @@ const GREY: Color = {
 };
 
 export const COLORS = {
-  GREYSCALE_100: '#fdfdfd',
+  GREYSCALE_100: '#ffffff',
   GREYSCALE_95: '#545454',
   GREYSCALE_90: '#545454',
   GREYSCALE_85: '#545454',
