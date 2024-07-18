@@ -125,7 +125,7 @@ export const createV5ThemeOptions = () => {
 };
 
 export const COLORS = {
-  GREYSCALE_100: '#545454',
+  GREYSCALE_100: '#d8.cd8.cd8.c',
   GREYSCALE_95: '#545454',
   GREYSCALE_90: '#545454',
   GREYSCALE_85: '#545454',
