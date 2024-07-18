@@ -2,7 +2,7 @@
   "name": "orbis-nebula-table-utils",
   "license": "MIT",
   "author": "Orbis",
-  "version": "2.7.3",
+  "version": "2.7.4",
   "description": "Common Components, Hooks and utils between `sn-table` and `sn-pivot-table` projects",
   "keywords": [
     "sn-table",
@@ -38,7 +38,8 @@
     "test:watch": "jest --watch",
     "test:coverage": "jest --coverage",
     "locale:generate": "node src/locale/scripts/generate-all.mjs",
-    "prepare": "node -e \"try { require('husky').install() } catch (e) {if (e.code !== 'MODULE_NOT_FOUND') console.log(e);}\""
+    "prepare": "node -e \"try { require('husky').install() } catch (e) {if (e.code !== 'MODULE_NOT_FOUND') console.log(e);}\"",
+    "publish:npm": "pnpm build:prod | npm publish --access public"
   },
   "devDependencies": {
     "@jest/globals": "29.7.0",

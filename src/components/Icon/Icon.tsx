@@ -124,16 +124,6 @@ export const createV5ThemeOptions = () => {
   };
 };
 
-export const COLORS = {
-  GREYSCALE_100: '#d8d8d8',
-  GREYSCALE_95: '#545454',
-  GREYSCALE_90: '#545454',
-  GREYSCALE_85: '#545454',
-  GREYSCALE_50: '#545454',
-  GREYSCALE_70: '#545454',
-  GREYSCALE_20: '#545454',
-};
-
 const GREY: Color = {
   50: '#fafafa',
   100: '#f5f5f5',
@@ -149,4 +139,14 @@ const GREY: Color = {
   A200: '#eeeeee',
   A400: '#bdbdbd',
   A700: '#616161',
+};
+
+export const COLORS = {
+  GREYSCALE_100: GREY['100'],
+  GREYSCALE_95: '#545454',
+  GREYSCALE_90: '#545454',
+  GREYSCALE_85: '#545454',
+  GREYSCALE_50: '#545454',
+  GREYSCALE_70: '#545454',
+  GREYSCALE_20: '#545454',
 };
