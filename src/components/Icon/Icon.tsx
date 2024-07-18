@@ -1,3 +1,5 @@
+import type { Color, Palette, PaletteColor } from '@mui/material';
+import type { PaletteAugmentColorOptions } from '@mui/material/styles/createPalette';
 import React from 'react';
 
 const Icon = (title: string, props: React.SVGProps<SVGSVGElement>): JSX.Element => {
@@ -44,13 +46,77 @@ export const ArrowRightStop = (props: React.SVGProps<SVGSVGElement>): JSX.Elemen
 export const ArrowLeftStop = (props: React.SVGProps<SVGSVGElement>): JSX.Element => Icon('ArrowLeftStop', props);
 
 export const createV5ThemeOptions = () => {
-  const palette = {
+  const palette: Palette = {
     text: {
-      primary: '',
-      disabled: '',
+      primary: '#404040',
+      secondary: '#9900ff',
+      disabled: '#e6ff00',
     },
     action: {
-      hover: {},
+      hover: 'createV5ThemeOptions.HOVER!',
+      active: '',
+      hoverOpacity: 0,
+      selected: '',
+      selectedOpacity: 0,
+      disabled: '',
+      disabledOpacity: 0,
+      disabledBackground: '',
+      focus: '',
+      focusOpacity: 0,
+      activatedOpacity: 0,
+    },
+    common: {
+      black: '#000000',
+      white: '#ffffff',
+    },
+    mode: 'dark',
+    contrastThreshold: 0,
+    tonalOffset: 0,
+    primary: {
+      light: '#ffff99',
+      main: '#ffff99',
+      dark: '#ffff99',
+      contrastText: '#ffff99',
+    },
+    secondary: {
+      light: '#ffff99',
+      main: '#ffff99',
+      dark: '#ffff99',
+      contrastText: '#ffff99',
+    },
+    error: {
+      light: '#ffff99',
+      main: '#ffff99',
+      dark: '#ffff99',
+      contrastText: '#ffff99',
+    },
+    warning: {
+      light: '#ffff99',
+      main: '#ffff99',
+      dark: '#ffff99',
+      contrastText: '#ffff99',
+    },
+    info: {
+      light: '#ffff99',
+      main: '#ffff99',
+      dark: '#ffff99',
+      contrastText: '#ffff99',
+    },
+    success: {
+      light: '#ffff99',
+      main: '#ffff99',
+      dark: '#ffff99',
+      contrastText: '#ffff99',
+    },
+    grey: GREY,
+    divider: '',
+    background: { default: '#ffff99', paper: '#ffff99' },
+
+    getContrastText: function (background: string): string {
+      return this.primary.contrastText;
+    },
+    augmentColor: function (options: PaletteAugmentColorOptions): PaletteColor {
+      return this.success;
     },
   };
   return {
@@ -66,4 +132,21 @@ export const COLORS = {
   GREYSCALE_50: '#545454',
   GREYSCALE_70: '#545454',
   GREYSCALE_20: '#545454',
+};
+
+const GREY: Color = {
+  50: '#fafafa',
+  100: '#f5f5f5',
+  200: '#eeeeee',
+  300: '#e0e0e0',
+  400: '#bdbdbd',
+  500: '#9e9e9e',
+  600: '#757575',
+  700: '#616161',
+  800: '#424242',
+  900: '#212121',
+  A100: '#f5f5f5',
+  A200: '#eeeeee',
+  A400: '#bdbdbd',
+  A700: '#616161',
 };
