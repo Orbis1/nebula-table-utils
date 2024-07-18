@@ -9,18 +9,17 @@ const Icon = (title: string, props: React.SVGProps<SVGSVGElement>): JSX.Element 
 // styles.ts
 export const Menu = (props: any): JSX.Element => {
   return (
-    <button {...props}>
-      <svg
-        xmlns="http://www.w3.org/2000/svg"
-        viewBox="0 0 16 16"
-        height="12px"
-        fill="currentColor"
-        aria-hidden="true"
-        role="img"
-      >
-        <path d="M15 4H1V2h14zm0 10H1v-2h14zm0-5H1V7h14z"></path>
-      </svg>
-    </button>
+    <svg
+      xmlns="http://www.w3.org/2000/svg"
+      viewBox="0 0 16 16"
+      height="12px"
+      fill="currentColor"
+      aria-hidden="true"
+      role="img"
+      {...props}
+    >
+      <path d="M15 4H1V2h14zm0 10H1v-2h14zm0-5H1V7h14z"></path>
+    </svg>
   );
 };
 
@@ -84,7 +83,7 @@ export const Selection = (props: React.SVGProps<SVGSVGElement>): JSX.Element => 
       role="img"
       {...props}
     >
-      <path d="M9.057 11.164a6 6 0 1 1 2.112-2.116 1 1 0 0 1 .052.044l4.176 4.08a1 1 0 0 1 .009 1.422l-.707.707a1 1 0 0 1-1.406.008l-4.185-4.087a1 1 0 0 1-.05-.058ZM10.5 6a4.5 4.5 0 1 0-9 0 4.5 4.5 0 0 0 9 0"></path>
+      <path d="M1 1.5a.5.5 0 0 1 .5-.5H3V0H1.5A1.5 1.5 0 0 0 0 1.5V3h1zM14.5 1a.5.5 0 0 1 .5.5V3h1V1.5A1.5 1.5 0 0 0 14.5 0H13v1zM1 14.5a.5.5 0 0 0 .5.5H3v1H1.5A1.5 1.5 0 0 1 0 14.5V13h1zm14 0a.5.5 0 0 1-.5.5H13v1h1.5a1.5 1.5 0 0 0 1.5-1.5V13h-1zM6 0h4v1H6zM0 6h1v4H0zm15 0h1v4h-1zm-9 9h4v1H6z"></path>
     </svg>
   );
 };
