@@ -13,7 +13,7 @@ const menuArrow = (rotation: arrowDirection) => (
   <svg
     xmlns="http://www.w3.org/2000/svg"
     viewBox="0 0 16 16"
-    height="16px"
+    height="12px"
     fill="currentColor"
     aria-hidden="true"
     role="img"
@@ -314,7 +314,7 @@ export const COLORS = {
   GREYSCALE_100: '#ffffff',
   GREYSCALE_95: '#ffff27',
   GREYSCALE_90: '#ffff28',
-  GREYSCALE_85: '#ffff29',
+  GREYSCALE_85: '#d9d9d9', //border-top
   GREYSCALE_50: '#ffff30',
   GREYSCALE_70: '#ffff31',
   GREYSCALE_20: '#ffff32',

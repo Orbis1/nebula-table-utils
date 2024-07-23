@@ -2,7 +2,7 @@
   "name": "orbis-nebula-table-utils",
   "license": "MIT",
   "author": "Orbis",
-  "version": "2.8.1",
+  "version": "2.8.2",
   "description": "Common Components, Hooks and utils between `sn-table` and `sn-pivot-table` projects",
   "keywords": [
     "sn-table",
