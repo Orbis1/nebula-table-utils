@@ -23,12 +23,30 @@ const menuArrow = (rotation: arrowDirection) => (
   </svg>
 );
 
+const menuArrowStop = (rotation: arrowDirection) => (
+  <svg
+    xmlns="http://www.w3.org/2000/svg"
+    viewBox="0 0 16 16"
+    height="12px"
+    fill="currentColor"
+    aria-hidden="true"
+    role="img"
+    transform={`rotate(${rotation})`}
+  >
+    <path d="m3.5 2 6 6-6 6L2 12.5 6.5 8 2 3.5zM14 2v12h-2V2z"></path>
+  </svg>
+);
+
 const Icon = (title: string, props: React.SVGProps<SVGSVGElement>): JSX.Element => {
   switch (title) {
     case 'ArrowRight':
       return menuArrow(arrowDirection.right);
+    case 'ArrowRightStop':
+      return menuArrowStop(arrowDirection.right);
     case 'ArrowLeft':
       return menuArrow(arrowDirection.left);
+    case 'ArrowLeftStop':
+      return menuArrowStop(arrowDirection.left);
     default:
       return <div key={props.key}>{title}</div>;
   }
@@ -201,7 +219,7 @@ export const createV5ThemeOptions = () => {
     text: {
       primary: '#404040',
       secondary: '#9900ff',
-      disabled: '#e6ff00',
+      disabled: '#0000004d',
     },
     action: {
       hover: 'createV5ThemeOptions.HOVER!',
@@ -224,44 +242,44 @@ export const createV5ThemeOptions = () => {
     contrastThreshold: 0,
     tonalOffset: 0,
     primary: {
-      light: '#ffff99',
-      main: '#ffff99',
-      dark: '#ffff99',
-      contrastText: '#ffff99',
+      light: '#ffff01',
+      main: '#ffff02',
+      dark: '#ffff03',
+      contrastText: '#ffff04',
     },
     secondary: {
-      light: '#ffff99',
-      main: '#ffff99',
-      dark: '#ffff99',
-      contrastText: '#ffff99',
+      light: '#ffff05',
+      main: '#ffff06',
+      dark: '#ffff07',
+      contrastText: '#ffff08',
     },
     error: {
-      light: '#ffff99',
-      main: '#ffff99',
-      dark: '#ffff99',
-      contrastText: '#ffff99',
+      light: '#ffff09',
+      main: '#ffff10',
+      dark: '#ffff11',
+      contrastText: '#ffff12',
     },
     warning: {
-      light: '#ffff99',
-      main: '#ffff99',
-      dark: '#ffff99',
-      contrastText: '#ffff99',
+      light: '#ffff13',
+      main: '#ffff14',
+      dark: '#ffff15',
+      contrastText: '#ffff16',
     },
     info: {
-      light: '#ffff99',
-      main: '#ffff99',
-      dark: '#ffff99',
-      contrastText: '#ffff99',
+      light: '#ffff17',
+      main: '#ffff18',
+      dark: '#ffff19',
+      contrastText: '#ffff20',
     },
     success: {
-      light: '#ffff99',
-      main: '#ffff99',
-      dark: '#ffff99',
-      contrastText: '#ffff99',
+      light: '#ffff21',
+      main: '#ffff22',
+      dark: '#ffff23',
+      contrastText: '#ffff24',
     },
     grey: GREY,
     divider: '',
-    background: { default: '#ffff99', paper: '#ffff99' },
+    background: { default: '#ffff25', paper: '#ffff26' },
 
     getContrastText: function (background: string): string {
       return this.primary.contrastText;
@@ -294,10 +312,10 @@ const GREY: Color = {
 
 export const COLORS = {
   GREYSCALE_100: '#ffffff',
-  GREYSCALE_95: '#545454',
-  GREYSCALE_90: '#545454',
-  GREYSCALE_85: '#545454',
-  GREYSCALE_50: '#545454',
-  GREYSCALE_70: '#545454',
-  GREYSCALE_20: '#545454',
+  GREYSCALE_95: '#ffff27',
+  GREYSCALE_90: '#ffff28',
+  GREYSCALE_85: '#ffff29',
+  GREYSCALE_50: '#ffff30',
+  GREYSCALE_70: '#ffff31',
+  GREYSCALE_20: '#ffff32',
 };
