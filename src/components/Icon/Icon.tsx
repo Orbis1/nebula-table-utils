@@ -9,7 +9,7 @@ enum arrowDirection {
   'up' = 270,
 }
 
-const menuArrow = (rotation: arrowDirection) => (
+const menuArrow = (rotation: arrowDirection, props: React.SVGProps<SVGSVGElement>) => (
   <svg
     xmlns="http://www.w3.org/2000/svg"
     viewBox="0 0 16 16"
@@ -18,12 +18,13 @@ const menuArrow = (rotation: arrowDirection) => (
     aria-hidden="true"
     role="img"
     transform={`rotate(${rotation})`}
+    {...props}
   >
     <path d="M8.5 8 4 3.5 5.5 2l6 6-6 6L4 12.5z"></path>
   </svg>
 );
 
-const menuArrowStop = (rotation: arrowDirection) => (
+const menuArrowStop = (rotation: arrowDirection, props: React.SVGProps<SVGSVGElement>) => (
   <svg
     xmlns="http://www.w3.org/2000/svg"
     viewBox="0 0 16 16"
@@ -32,6 +33,7 @@ const menuArrowStop = (rotation: arrowDirection) => (
     aria-hidden="true"
     role="img"
     transform={`rotate(${rotation})`}
+    {...props}
   >
     <path d="m3.5 2 6 6-6 6L2 12.5 6.5 8 2 3.5zM14 2v12h-2V2z"></path>
   </svg>
@@ -40,13 +42,13 @@ const menuArrowStop = (rotation: arrowDirection) => (
 const Icon = (title: string, props: React.SVGProps<SVGSVGElement>): JSX.Element => {
   switch (title) {
     case 'ArrowRight':
-      return menuArrow(arrowDirection.right);
+      return menuArrow(arrowDirection.right, props);
     case 'ArrowRightStop':
-      return menuArrowStop(arrowDirection.right);
+      return menuArrowStop(arrowDirection.right, props);
     case 'ArrowLeft':
-      return menuArrow(arrowDirection.left);
+      return menuArrow(arrowDirection.left, props);
     case 'ArrowLeftStop':
-      return menuArrowStop(arrowDirection.left);
+      return menuArrowStop(arrowDirection.left, props);
     default:
       return <div key={props.key}>{title}</div>;
   }
@@ -81,6 +83,7 @@ export const Descending = (props: React.SVGProps<SVGSVGElement>): JSX.Element =>
       fill="currentColor"
       aria-hidden="true"
       role="img"
+      {...props}
     >
       <path d="M3 2h1v10.293l1.5-1.5.707.707L3.5 14.207.793 11.5l.707-.707 1.5 1.5zm12 2H8v1h7zM8 7h6v1H8zm5 3H8v1h5z"></path>
     </svg>
