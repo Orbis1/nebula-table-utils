@@ -1,13 +1,13 @@
 #! /usr/bin/env node
-import { globbySync } from 'globby';
-import { fileURLToPath } from 'url';
 import fs from 'fs';
+import { globbySync } from 'globby';
 import path from 'path';
+import { fileURLToPath } from 'url';
 
 const dirname = path.dirname(fileURLToPath(import.meta.url));
 
 const LOCALES_DIR = path.resolve(dirname, '../locales');
-const LOCALES_FILES = globbySync([`${LOCALES_DIR}/*.json`]);
+const LOCALES_FILES = globbySync([`${LOCALES_DIR}/*.json`.replace(/\\/g, '/')]);
 const LOCALE_PKG_DIR = path.resolve(dirname, '..');
 const ALL = path.resolve(`${LOCALE_PKG_DIR}`, 'all.json');
 

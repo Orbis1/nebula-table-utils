@@ -18,7 +18,6 @@ const menuArrow = (rotation: arrowDirection, props: React.SVGProps<SVGSVGElement
     aria-hidden="true"
     role="img"
     transform={`rotate(${rotation})`}
-    style={{ minWidth: '24px' }}
     {...props}
   >
     <path d="M8.5 8 4 3.5 5.5 2l6 6-6 6L4 12.5z"></path>
@@ -34,7 +33,6 @@ const menuArrowStop = (rotation: arrowDirection, props: React.SVGProps<SVGSVGEle
     aria-hidden="true"
     role="img"
     transform={`rotate(${rotation})`}
-    style={{ minWidth: '24px' }}
     {...props}
   >
     <path d="m3.5 2 6 6-6 6L2 12.5 6.5 8 2 3.5zM14 2v12h-2V2z"></path>

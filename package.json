@@ -2,7 +2,7 @@
   "name": "orbis-nebula-table-utils",
   "license": "MIT",
   "author": "Orbis",
-  "version": "2.8.4",
+  "version": "2.8.6",
   "description": "Common Components, Hooks and utils between `sn-table` and `sn-pivot-table` projects",
   "keywords": [
     "sn-table",
@@ -33,6 +33,7 @@
     "build:watch": "pnpm run locale:generate && nodemon --exec ./build-utils/build-copy.sh",
     "lint": "eslint src/*",
     "format:check": "prettier --check './src/**/*.{ts,tsx}' --ignore-unknown",
+    "format:fix": "prettier --write './src/**/*.{ts,tsx}' --ignore-unknown",
     "types:check": "tsc --noEmit",
     "test:unit": "jest",
     "test:watch": "jest --watch",
